@@ -1,0 +1,51 @@
+/* ---- Select2 compact summary styles ---- */
+/* Ensure the outer Select2 box has no extra padding that would create vertical gap */
+.select2-container--default .select2-selection--multiple {
+padding: 0 !important;
+min-height: 38px !important;       /* match the height you want */
+height: 38px !important;
+box-sizing: border-box !important;
+display: flex !important;
+align-items: center !important;
+}
+
+/* The rendered container (Select2 uses an <ul> element) — make it tight */
+.select2-container--default .select2-selection--multiple .select2-selection__rendered {
+display: block !important;         /* block so we can inject a single span */
+padding: 0 8px !important;
+margin: 0 !important;
+height: 38px !important;
+line-height: 38px !important;     /* center text vertically */
+overflow: hidden !important;
+}
+
+/* Hide the default chips/choices completely */
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+display: none !important;
+margin: 0 !important;
+padding: 0 !important;
+height: 0 !important;
+line-height: 0 !important;
+}
+
+/* Our injected summary span — ensures perfect vertical centering and no extra spacing */
+.select2-summary {
+display: inline-block;
+height: 38px;
+line-height: 38px;
+vertical-align: middle;
+white-space: nowrap;
+text-overflow: ellipsis;
+overflow: hidden;
+max-width: 100%;
+font-weight: 600;
+color: rgba(29,31,33,0.85);
+}
+
+/* If Select2 placeholder element appears, make sure it matches */
+.select2-container--default .select2-selection--multiple .select2-selection__placeholder {
+margin: 0 !important;
+line-height: 38px !important;
+height: 38px !important;
+padding: 0 8px !important;
+}
