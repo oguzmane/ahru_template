@@ -1,0 +1,10 @@
+/* PUB YEAR SLIDER */
+
+.noUi-tooltip {
+    font-size: 14px !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: #333 !important; /* Adjust text color as needed */
+    padding: 0 !important;
+}
