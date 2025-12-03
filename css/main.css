@@ -3,7 +3,6 @@ body {
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
-    background-color: #f8f9fa;
 }
 .title {
     color: rgba(29,31,33,0.75);
